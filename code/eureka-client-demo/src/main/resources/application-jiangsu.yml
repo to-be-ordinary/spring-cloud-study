@@ -1,0 +1,13 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:1111/eureka
+     jiangsu: http://localhost:1111/eureka
+  instance:
+    metadata-map:
+      zone: jiangsu
+spring:
+  application:
+    name: sun-client-first
